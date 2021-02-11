@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifos</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        
+        <a title="Home" href="index.html"> <img class= "logo" src='Recursos/logo-desktop.svg' alt="logo"></a>
+        
+        <input class= "menu-btn" type= "checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class= "navicon"></span></label>
+        
+        
+        <div class="menu">
+            <ul class="menu-contenedor">
+                <li><a class="nocturno" href="#nocturno"> Modo Nocturno </a><hr class="subrayado"></li>
+                <li><a href="favoritos.html"> Favoritos </a><hr class="subrayado"></li>
+                <li><a href="mis-gifos.html"> Mis GIFOS</a><hr class="subrayado"></li>
+                <li class="btnCrear"><a href="crear-gifos.html"><img id='btn-crear' src="Recursos/button-crear-gifo.svg" alt='crearGifos'></a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <section class="gifos-encabezado">
+            <img class="gifos-img" src="Recursos/icon-mis-gifos.svg" alt="favoritos">
+            <h2 class="gifos-h2">Mis Gifos</h2>
+        </section>
+        <section class="contenedor-gifos">
+            <div class="gifos"></div>
+            <img class="verMas" src="Recursos/CTA-ver-mas.svg" alt="ver mas">
+            <div class="favs-gifos">
+                <div class="favs"></div>
+            </div>
+            <div class="no-resultado">
+                <img class= "no-resultados-img" src="Recursos/icon-mis-gifos-sin-contenido.svg" alt="sin resultados">
+                <h3 class="no-resultados-h3">¡Animate a crear tu primer GIFO!</h3>
+            </div>
+            <div class="modal">
+                <span class="close-modal"><img src="Recursos/close.svg" alt="cerrar"></span>
+                <img class="modal-img" alt='modal-gif'>
+                
+                <div class="modal-contenedor">
+                    <div class="parrafos-modal">
+                        <p class="user-modal"></p>
+                        <p class="titulo-modal"></p>
+                    </div>
+                    <div class="iconos-modal">
+                        <span class="fav-modal"><img src="Recursos/icon-fav.svg" alt="fav">
+                        </span>
+                        <a class="descarga-modal"><img src="Recursos/icon-download.svg" alt="descarga"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor-trendingGifs">
+            <div class="trending-parrafo">
+                <h3 class="h3">Trending GIFOS</h3>
+                <h6 class="h6">Mira los últimos <br>GIFOS de nuestra comunidad</h6>
+            </div>
+            <div class="carousel">
+                <a href="#" class="flecha-atras"><img src="Recursos/button-slider-left.svg" alt="flecha-atras"></a>
+                <div class="carousel-interno"></div>
+                <a href="#" class="flecha-adelante"><img src="Recursos/Button-Slider-right.svg" alt="flecha-atras"></a>
+            </div>
+        </section>
+        
+        <footer class='footer'>
+            <div class="redes">
+                <p>Compartir en:</p>
+                <div class="redes-iconos">
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank"><img id="facebook" src="Recursos/icon_facebook.svg" alt="facebook"></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><img id="twitter" src="Recursos/icon-twitter.svg" alt="twitter"></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><img id="instagram" src="Recursos/icon_instagram.svg" alt="instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='copyright'>
+                <p>© GIFOS 2020 All Rights Reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="Script/giphy.js"></script>
+    <script src="Script/funciones.js"></script> 
+    <script src="Script/mis-gifos.js"></script> 
+</body>
+</html>

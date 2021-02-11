@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifos</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        
+        <a title="Home" href="index.html"> <img class="logo" src='Recursos/logo-desktop.svg' alt="logo"></a>        
+        <input class= "menu-btn" type= "checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class= "navicon"></span></label>
+        
+        
+        <div class="menu">
+            <ul class="menu-contenedor">
+                <li><a class="nocturno" href="#nocturno"> Modo Nocturno </a><hr class="subrayado"></li>
+                <li><a href="favoritos.html"> Favoritos </a><hr class="subrayado"></li>
+                <li><a href="mis-gifos.html"> Mis GIFOS</a><hr class="subrayado"></li>
+                <li class="btnCrear"><a href="crear-gifos.html"><img id='btn-crear' src="Recursos/button-crear-gifo.svg" alt='crearGifos'></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor-crear">
+            <img id="camara" src="Recursos/camara.svg" alt="camara">
+            <img id="haz-luz" src="Recursos/Path2.svg" alt="luz-camara">
+            <div class="pantalla-crear">
+                <div id="vertice-1"></div>
+                <div id="vertice-2"></div>
+                <div class="p-crear">
+                    <h3 id="p1-crear">Aqui podrás <br> crear tus propios <span>GIFOS</span></h3>
+                    <p id="p2-crear">¡Crea tu GIFO en sólo 3 pasos!<br>(sólo necesitas una cámara para grabar un video)</p>
+                </div>
+                <div class="video">
+                    <div class="hover-video"></div>
+                    <video></video>
+                </div>
+                <div class="p-acceso">
+                    <h3 id="p1-acceso">¿Nos das acceso <br>a tu cámara?</h3>
+                    <p id="p2-acceso">El acceso de tu cámara será válido sólo <br>por el tiempo en el que estés creando el GIFO</p>
+                </div>
+                <div class="p-carga">
+                    <img id="carga" src="Recursos/loader.svg" alt="carga">
+                    <p id="carga-p">Estamos subiendo tu GIFO</p>
+                </div>
+                
+                <div class="subido">
+                    <div class="cont-subido-p">
+                        <div class="iconos-subido">
+                            <img id="descarga-crear-gifo" src="Recursos/icon-download.svg" alt="descarga">
+                            <img id="link-crear-gifo" src="Recursos/icon-link-normal.svg" alt="link">
+                            <div class="contLink"></div>
+                        </div>
+                        <div class="p-subido">
+                            <img id="subido-icon" src="Recursos/ok.svg" alt="carga">
+                            <p id="subido-p">GIFO subido con éxito</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="vertice-3"></div>
+                <div id="vertice-4"></div>
+            </div>
+            <div class="contenedor-pasos">
+                    <div class="contenedor-numeros">
+                        <div id="circulo-paso-1"><p class="p-paso-1">1</p></div>
+                        <div id="circulo-paso-2"><p class="p-paso-2">2</p></div>
+                        <div id="circulo-paso-3"><p class="p-paso-3">3</p></div>
+                    </div>
+                    <div class="contenedor-repetir">
+                        <div><p class="tiempo-grabacion"></p></div>
+                        <div class="repetir"><p>Repetir Captura</p></div>
+                    </div>
+            </div>
+            
+            <div class="linea-crear"></div>
+            <div class="btn-comenzar">
+                <a id="btn-comenzar" href="#"><p class="btn-comenzar-p">COMENZAR</p></a>
+            </div>
+            <div class="btn-grabar">
+                <a id="btn-grabar" href="#"><p class="btn-grabar-p">GRABAR</p></a>
+            </div>
+            <div class="btn-finalizar">
+                <a id="btn-finalizar" href="#"><p class="btn-finalizar-p">FINALIZAR</p></a>
+            </div>
+            <div class="btn-subir">
+                <a id="btn-subir" href="#"><p class="btn-subir-p">SUBIR GIFO</p></a>
+            </div>
+            <img id="rollo" src="Recursos/pelicula.svg" alt="rollo-pelicula">
+        </section>
+
+
+        <footer class='footer'>
+            <div class="redes">
+                <p>Compartir en:</p>
+                <div class="redes-iconos">
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank"><img id="facebook" src="Recursos/icon_facebook.svg" alt="facebook"></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><img id="twitter" src="Recursos/icon-twitter.svg" alt="twitter"></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><img id="instagram" src="Recursos/icon_instagram.svg" alt="instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='copyright'>
+                <p>© GIFOS 2020 All Rights Reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="Script/giphy.js"></script>
+    <script src="Script/funciones.js"></script> 
+    <script src="Script/crear-gifos.js"></script> 
+</body>
+</html>
